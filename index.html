@@ -8,19 +8,26 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/all.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Gafata&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <i class="fas fa-space-shuttle"></i>
-        <img src="#" id="header-img" alt="">
-        <nav id="nav-bar">
-            <ul>
-                <li><a class="nav-link" href="#">Link</a></li>
-                <li><a class="nav-link" href="#">Link</a></li>
-                <li><a class="nav-link" href="#">Link</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="page-wrapper">
+    
+        <header id="header">
+            <div class="logo">
+                <div id="logo-icon"><i class="fas fa-space-shuttle"></i></div>
+                <div id="bus-name">Galactic Cruiselines</div>
+            </div> 
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#">Link</a></li>
+                    <li><a class="nav-link" href="#">Link</a></li>
+                    <li><a class="nav-link" href="#">Link</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
 
     <section id="intro">
         <h1>Galactic Cruiselines</h1>
@@ -38,28 +45,44 @@
         </form>
     </section>
 
+    <div class="container">
+
     <section id="features">
-        <div class="feature" id="feature-1">
-            <i class="fas fa-user-astronaut"></i> 
-            <p>NASA-Grade Intergallactic Travel Suits designed by top designers.</p> 
+        <div class="grid">
+            <div class="icon"><i class="fas fa-user-astronaut"></i></div> 
+            <div class="desc">
+            <h2></h2>
+            <p>NASA-Grade Intergallactic Travel Suits designed by top designers.</p>
+            </div>
         </div>
-        <div class="feature" id="feature-2">
-            <i class="fas fa-luggage-cart"></i>
-            <p>luggage delivery</p> 
+        <div class="grid">
+            <div class="icon"><i class="fas fa-luggage-cart"></i></div>
+            <div class="desc">
+            <h2></h2>
+            <p>luggage delivery</p>
+            </div>
         </div>
-        <div class="feature" id="feature-3">
-            <i class="fas fa-cocktail"></i>
+        <div class="grid">
+            <div class="icon"><i class="fas fa-cocktail"></i></div>
+            <div class="desc">
+            <h2></h2>
             <p>Gourmet dining options - enjoy everything from Brunch to Happy Hour prepared by our Univerally-acclaimed culinary team.</p>
+            </div>
         </div>
         
     </section>
 
     <section id="demo">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/fniq8Wuw60A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="video">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/fniq8Wuw60A" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
     </section>
 
     <section id="pricing">
-        <div class="product" id="coach">
+        <div class="product" id="earthling">
             <div class="level">Earthling</div>
             <h2>$price</h2>
             <ol>
@@ -70,7 +93,7 @@
             <button class="btn">Select</button>
         </div>
 
-        <div class="product" id="coach">
+        <div class="product" id="venusian">
             <div class="level">Venusian</div>
             <h2>$price</h2>
             <ol>
@@ -81,7 +104,7 @@
             <button class="btn">Select</button>
         </div>
 
-        <div class="product" id="coach">
+        <div class="product" id="galactical">
             <div class="level">Galactical</div>
             <h2>$price</h2>
             <ol>
@@ -101,6 +124,8 @@
         </ul>
         <span>Copyright 2022, Space-Ex Inc.</span>
     </footer>
-    
+
+    </div>
+    </div>
 </body>
 </html>

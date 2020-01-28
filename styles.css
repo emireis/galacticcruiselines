@@ -1,0 +1,78 @@
+/* Global Elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #300D53; */
+    font-family: 'Gafata', sans-serif;
+}
+
+#page-wrapper {
+    position: absolute;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    /* color: #F4ECFD; */
+    text-decoration: none;
+}
+
+/*  */
+
+.grid {
+    display: flex;
+}
+
+/* Navbar Styling */
+
+/* .container {  nixed container div around header
+    margin: 0 auto;
+    width: 100%;
+} */
+
+header {
+    position: fixed;
+    margin: 0 auto;
+
+    width: 80%;
+    background-color: #3AE7D6;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    display: flex;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+#logo-icon {
+    padding-right: 15px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+ margin: 0;
+ padding: 0;   
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+}
