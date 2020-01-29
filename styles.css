@@ -13,6 +13,7 @@ body {
 
 #page-wrapper {
     position: absolute;
+    width: 90%;
 }
 
 li {
@@ -26,9 +27,17 @@ a {
 
 /*  */
 
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .grid {
     display: flex;
 }
+
+
 
 /* Navbar Styling */
 
@@ -40,22 +49,22 @@ a {
 header {
     position: fixed;
     margin: 0 auto;
-
-    width: 80%;
+    width: 100%;
     background-color: #3AE7D6;
 }
 
-header::after{
+/* header::after{
     content: '';
     display: table;
     clear: both;
-}
+} */
 
 .logo {
     float: left;
     display: flex;
     font-size: 2rem;
     padding: 10px;
+    color: #23423F
 }
 
 #logo-icon {
@@ -64,6 +73,7 @@ header::after{
 
 nav {
     float: right;
+    font-weight: 400;
 }
 
 nav ul {
@@ -73,6 +83,73 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 35px;
+    margin-right: 35px;
     padding-top: 20px;
+
+    position: relative;
+}
+
+nav a {
+    color: #23423F;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: black;
+    font-weight: 400;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: black;
+
+    position: absolute;
+    top: 15px;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/*  */
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.headline {
+    margin-bottom: 30px;
+    font-size: 1.7em;
+}
+
+.landing input[type="email"] {
+    
+}
+
+.landing input[type="button"] {
+    margin-top: 30px;
+    padding: 0 20px;
+    height: 40px;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #F3D876;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.landing input[type="button"]:hover {
+    background-color: #F9C300;
+    transition: background-color 1s;
 }
