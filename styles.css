@@ -12,8 +12,8 @@ body {
 }
 
 #page-wrapper {
-    position: absolute;
-    width: 90%;
+    /* position: absolute; */
+    width: 100%;
 }
 
 li {
@@ -41,30 +41,25 @@ a {
 
 /* Navbar Styling */
 
-/* .container {  nixed container div around header
-    margin: 0 auto;
-    width: 100%;
-} */
-
 header {
     position: fixed;
     margin: 0 auto;
     width: 100%;
-    background-color: #3AE7D6;
+    background-color: #F4ECFD;
 }
 
-/* header::after{
+header::after{
     content: '';
     display: table;
     clear: both;
-} */
+}
 
 .logo {
     float: left;
     display: flex;
     font-size: 2rem;
     padding: 10px;
-    color: #23423F
+    color: #0C0514
 }
 
 #logo-icon {
@@ -91,13 +86,14 @@ nav li {
 }
 
 nav a {
-    color: #23423F;
+    color: #0C0514;
     text-transform: uppercase;
 }
 
 nav a:hover {
-    color: black;
+    color: #33164F;
     font-weight: 400;
+    text-shadow: 1px 1px 1px #DFBCF5;
 }
 
 nav a::before {
@@ -124,21 +120,38 @@ nav a:hover::before {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100%;
+
+    background-image: url("img/galaxia.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    background-color: #0C0514;
 }
 
 .headline {
     margin-bottom: 30px;
+    color: #F4ECFD;
     font-size: 1.7em;
+    text-shadow: 1.2px 1.2px .8px #33164F;
 }
 
 .landing input[type="email"] {
-    
+    padding: 0 20px;
+    height: 35px;
+    font-family: inherit;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
 }
 
 .landing input[type="button"] {
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 0 20px;
-    height: 40px;
+    height: 35px;
     font-family: inherit;
     font-size: 1em;
     font-weight: 500;
@@ -150,6 +163,6 @@ nav a:hover::before {
 }
 
 .landing input[type="button"]:hover {
-    background-color: #F9C300;
+    background-color: #D4A806;
     transition: background-color 1s;
 }
