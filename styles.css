@@ -9,10 +9,14 @@
 body {
     /* background-color: #300D53; */
     font-family: 'Gafata', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    background-color: #0C0514;
 }
 
 #page-wrapper {
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
 }
 
@@ -31,10 +35,6 @@ a {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-}
-
-.grid {
-    display: flex;
 }
 
 
@@ -165,4 +165,48 @@ nav a:hover::before {
 .landing input[type="button"]:hover {
     background-color: #D4A806;
     transition: background-color 1s;
+}
+
+/* .features-title {
+    margin-bottom: 50px;
+} */
+
+.features {
+    /* background-color: #DFBCF5; */
+    width: 80%;
+    margin: 80px auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.features .icon {
+    width: 10%;
+    font-size: 2.2rem;
+    /* color: #0C0514; */
+    text-shadow: 0 0 10px #47117C, 0 0 20px #7028B8, 0 0 30px #7C30C9, 
+        0 0 40px #DFBCF5, 0 0 50px #EDDCF8;
+}
+
+/* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+
+.features .emph {
+    width: 15%;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-left: 0;
+    letter-spacing: .4em;
+}
+
+.features .desc {
+    width: 75%;
+    margin-left: 20px;
 }
