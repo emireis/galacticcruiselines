@@ -9,7 +9,7 @@
 body {
     /* background-color: #300D53; */
     font-family: 'Gafata', sans-serif;
-    color: white;
+    color: #fff;
     font-size: 1.2em;
     line-height: 1.2em;
     background-color: #0C0514;
@@ -173,40 +173,59 @@ nav a:hover::before {
 
 .features {
     /* background-color: #DFBCF5; */
-    width: 80%;
     margin: 80px auto;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 900vw;
 }
 
 .grid {
     display: flex;
     flex-direction: row;
     margin: 15px 0;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .features .icon {
-    width: 10%;
-    font-size: 2.2rem;
-    /* color: #0C0514; */
-    text-shadow: 0 0 10px #47117C, 0 0 20px #7028B8, 0 0 30px #7C30C9, 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 20vw;
+    padding-left: 20px;
+    font-size: 2.5em;
+    /* glow effect */
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+/* glow effect */
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #47117C, 0 0 20px #7028B8, 0 0 30px #7C30C9, 
         0 0 40px #DFBCF5, 0 0 50px #EDDCF8;
+    }
+
+    to {
+        text-shadow: 0 0 20px #EE80F3, 0 0 30px #F09DF5, 0 0 40px #F09DF5, 
+        0 0 50px #F3C0F6, 0 0 60px #F3D5F5, 0 0 70px #F2DBF4;
+    }
 }
 
 /* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
 
+.features .feat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+}
+
 .features .emph {
-    width: 15%;
     font-size: 1.2em;
     text-transform: uppercase;
-    margin-left: 0;
     letter-spacing: .4em;
 }
 
 .features .desc {
-    width: 75%;
-    margin-left: 20px;
+    padding-top: 16px;
 }
