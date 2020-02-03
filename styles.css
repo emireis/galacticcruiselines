@@ -32,7 +32,7 @@ a {
 /*  */
 
 .container {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     width: 100%;
     margin: 0 auto;
 }
@@ -174,7 +174,7 @@ nav a:hover::before {
 .features {
     /* background-color: #DFBCF5; */
     margin: 80px auto;
-    width: 900vw;
+    width: 100vw;
 }
 
 .grid {
@@ -212,12 +212,25 @@ nav a:hover::before {
 
 /* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
 
+@media (max-width: 560px) {
+    .features .icon {
+        display: none;
+    }
+}
+
 .features .feat {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 125px;
     width: 80vw;
+}
+
+@media (max-width: 560px){
+    .features .feat {
+        width: 100vw;
+        text-align: center;
+    }
 }
 
 .features .emph {
@@ -228,4 +241,42 @@ nav a:hover::before {
 
 .features .desc {
     padding-top: 16px;
+}
+
+/* video */
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#video > iframe {
+    max-width: 550px;
+    width: 100%;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    max-width: 100
+    width: 100%;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing .product {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 15px;
+    padding: 0 40px;
+    border: 1px solid white;
+}
+
+@media (max-width: 560px){
+    .pricing .product {
+        width: 100%;
+    }
 }
