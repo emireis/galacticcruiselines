@@ -248,7 +248,7 @@ nav a:hover::before {
 #video {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 70px auto;
 }
 
 #video > iframe {
@@ -259,24 +259,81 @@ nav a:hover::before {
 .pricing {
     display: flex;
     flex-direction: row;
-    max-width: 100
-    width: 100%;
-    margin: 50px 0;
     justify-content: center;
-    align-items: center;
+    width: 100%;
+    margin: 100px 0px;
 }
 
 .pricing .product {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    color: #33164F;
+    width: 33%;
+    margin: 0 25px;
+    background-color: #F4ECFD;
+    border: 0px;
+    border-radius: 15px;
 
-    margin: 0 15px;
-    padding: 0 40px;
-    border: 1px solid white;
 }
 
-@media (max-width: 560px){
+.level {
+    background-color: #47117C;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: white;
+    text-shadow: 0 0 5px #EE80F3, 0 0 10px #F09DF5, 0 0 20px #F3D5F5;
+
+}
+
+.product > h2 {
+    margin-top: 20px;
+}
+
+.product > ol {
+    margin: 20px 0 15px 0;
+    line-height: 2em;
+}
+
+.product > .btn {
+    width: 125px;
+    height: 30px;
+    align-self: center;
+    margin: 25px 0;
+    font-family: inherit;
+    font-size: 0.8em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow:  0 8px 20px #F3D5F5;
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.product .btn:hover {
+    background-color: #47117C;
+    color: white;
+    box-shadow: 0 15px 30px #7C30C9;
+    transform: translateY(-7px);
+}
+
+@media (max-width: 800px){
+    .pricing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .pricing .product {
-        width: 100%;
+        width: 70%;
+        max-width: 450px;
+        margin: 35px 0;
     }
 }
+
+
