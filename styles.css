@@ -25,7 +25,7 @@ li {
 }
 
 a {
-    /* color: #F4ECFD; */
+    color: #fff;
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ header::after{
     color: #0C0514
 }
 
-#logo-icon {
+#header-img {
     padding-right: 15px;
 }
 
@@ -172,16 +172,15 @@ nav a:hover::before {
 } */
 
 .features {
-    /* background-color: #DFBCF5; */
-    margin: 80px auto;
-    width: 100vw;
+    margin: 150px auto;
+    width: 65%;
 }
 
 .grid {
     display: flex;
     flex-direction: row;
     margin: 15px 0;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .features .icon {
@@ -210,27 +209,12 @@ nav a:hover::before {
     }
 }
 
-/* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
-
-@media (max-width: 560px) {
-    .features .icon {
-        display: none;
-    }
-}
-
 .features .feat {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 125px;
     width: 80vw;
-}
-
-@media (max-width: 560px){
-    .features .feat {
-        width: 100vw;
-        text-align: center;
-    }
 }
 
 .features .emph {
@@ -243,25 +227,40 @@ nav a:hover::before {
     padding-top: 16px;
 }
 
+@media (max-width: 760px) {
+    .features .icon {
+        display: none;
+    }
+}
+
+@media (max-width: 760px){
+    .features .feat {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* video */
 
 #video {
     display: flex;
     justify-content: center;
-    margin: 70px auto;
+    margin: 150px auto;
 }
 
 #video > iframe {
-    max-width: 550px;
+    max-width: 650px;
     width: 100%;
 }
+
+/* Pricing / Cards */
 
 .pricing {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin: 100px 0px;
+    margin: 150px 0px;
 }
 
 .pricing .product {
@@ -269,6 +268,7 @@ nav a:hover::before {
     flex-direction: column;
     text-align: center;
     color: #33164F;
+    max-width: 350px;
     width: 33%;
     margin: 0 25px;
     background-color: #F4ECFD;
@@ -336,4 +336,30 @@ nav a:hover::before {
     }
 }
 
+/* Footer */
 
+footer {
+    background-color: #33164F;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9em;
+}
+
+footer > ul > li {
+    padding: 0 20px;
+}
+
+footer > ul > li > a:hover {
+    text-shadow: 0 0 5px #F3D5F5;
+}
+
+footer > span {
+    font-size: 0.7em;
+}
