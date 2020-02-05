@@ -63,7 +63,7 @@ header::after{
 }
 
 #header-img {
-    padding-right: 15px;
+    padding: 0 15px 0 10px;
 }
 
 nav {
