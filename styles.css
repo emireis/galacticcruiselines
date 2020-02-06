@@ -167,9 +167,19 @@ nav a:hover::before {
     transition: background-color 1s;
 }
 
-/* .features-title {
-    margin-bottom: 50px;
-} */
+@media (max-width: 520px) {
+    .headline {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 410px) {
+    .headline {
+        font-size: 1.1em;
+    }
+}
+
+/* features */
 
 .features {
     margin: 150px auto;
@@ -242,14 +252,14 @@ nav a:hover::before {
 
 /* video */
 
-#video {
+.experience {
+    margin: 150px auto;
     display: flex;
     justify-content: center;
-    margin: 150px auto;
 }
 
-#video > iframe {
-    max-width: 650px;
+.experience > iframe {
+    max-width: 560px;
     width: 100%;
 }
 
