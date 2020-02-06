@@ -71,6 +71,14 @@ nav {
     font-weight: 400;
 }
 
+@media (max-width: 830px) {
+    nav {
+        /* nav links to center */
+    }
+}
+/* at 830px nav links drop down to 2nd row */
+/* at 490px nav links collapse */
+
 nav ul {
  margin: 0;
  padding: 0;   
@@ -81,7 +89,6 @@ nav li {
     margin-left: 35px;
     margin-right: 35px;
     padding-top: 20px;
-
     position: relative;
 }
 
@@ -354,6 +361,13 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 footer > ul {
