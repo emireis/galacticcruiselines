@@ -49,9 +49,9 @@ header {
     position: fixed;
     margin: 0 auto;
     width: 100%;
-    background-color: #F4ECFD;
+    background-color: #090118;
     font-family: inherit;
-    color: #0C0514;
+    color: #F4ECFD;
 }
 
 header::after{
@@ -72,7 +72,8 @@ nav {
     display: flex;
     font-size: 26px;
     padding: 10px;
-    color: #0C0514;
+    color: #F4ECFD;
+    text-shadow: 0 0 8px #F09DF5, 0 0 9px #F09DF5;
 }
 
 #logo {
@@ -107,7 +108,7 @@ nav {
     border: 0;
     padding-right: 15px;
     display: none;
-    color: #0C0514;
+    color: #F4ECFD;
     font-size: 24px;
     cursor: pointer;
 }
@@ -131,15 +132,15 @@ nav li {
 
 .nav-link {
     display: inline-block;
-    color: #0C0514;
+    color: #F4ECFD;
     text-transform: uppercase;
     padding: 10px 20px;
 }
 
 .nav-link:hover {
-    color: #33164F;
+    color: #F4ECFD;
     font-weight: 400;
-    text-shadow: 1px 1px 1px #DFBCF5;
+    text-shadow: 1px 1px 1px #F3D5F5;
 }
 
 .nav-link::before {
@@ -147,8 +148,11 @@ nav li {
     display: block;
     height: 2.5px;
     background-color: #F4ECFD;
-    box-shadow: 0 0 10px #47117C, 0 0 20px #7028B8, 0 0 30px #7C30C9, 
-    0 0 40px #DFBCF5, 0 0 50px #EDDCF8;
+    box-shadow: 0 0 10px #F09DF5, 0 0 20px #F09DF5, 0 0 30px #F3C0F6, 
+    0 0 40px #F3D5F5, 0 0 50px #F2DBF4;
+
+    /* text-shadow: 0 0 20px #EE80F3, 0 0 30px #F09DF5, 0 0 40px #F09DF5, 
+        0 0 50px #F3C0F6, 0 0 60px #F3D5F5, 0 0 70px #F2DBF4; */
 
     position: absolute;
     top: 5px;
